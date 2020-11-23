@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+
+<ul>
+  <li><a href="/home">Home</a></li>
+  <li><a class="active" href="/stats">Stats</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+
+<title>Stats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+</style>
+
+<head>
+	<title>{{countryname}}</title>
+	<body>
+		<h1>{{countryname}} Stats</h1>
+		<h1>Population: {{countrypop}}
+		<h1>Cases: {{countrycases}}</h1>
+		{% if countrydeaths is string %}
+			<h1>Deaths: {{countrydeaths}} </h1>	
+		{% else %}
+			<h1>Deaths: No data</h1>
+		{% endif %}
+		<img src="{{ user_image }}" alt="User Image">
+	</body>
+</head>
+</html>
