@@ -12,7 +12,7 @@ import os
 
 covid19 = COVID19Py.COVID19("https://covid-tracker-us.herokuapp.com")
 
-with open("/home/ruiyichi/Desktop/flaskmain/static/countries.json") as json_file:
+with open("static/countries.json") as json_file:
     countries = json.load(json_file)
 
 class Country(object):
@@ -84,7 +84,7 @@ class Country(object):
         else:
             plt.scatter(case_dates, cases, s=20)
 
-        plt.savefig(r'/home/ruiyichi/Desktop/flaskmain/static/covid19plots/plot_' + self.code + '.jpg')
+        plt.savefig(r'static/covid19plots/plot_' + self.code + '.jpg')
         plt.clf()
 
 
