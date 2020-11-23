@@ -1,5 +1,5 @@
 ## About:
-Offline COVID-19 web app for tracking number of cases and deaths in various countries
+Offline COVID-19 web app for tracking number of cases and deaths in various countries, created May/June 2020
 
 ## Dependencies:
 - Python 3
