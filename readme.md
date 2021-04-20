@@ -7,3 +7,5 @@ Offline COVID-19 web app for tracking number of cases and deaths in various coun
 - COVID19Py
 - matplotlib
 - numpy
+
+CSS credit: https://www.w3schools.com/
